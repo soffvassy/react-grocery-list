@@ -25,7 +25,7 @@ header, footer {
 
 .grocery-list {
   background: #fff;
-  width: 450px;
+  width: 500px;
   margin: 70px auto;
   border-radius: 6px;
   overflow: hidden;
@@ -37,6 +37,31 @@ header, footer {
   font-size: 1.2em;
   border-bottom: solid 2px #EEEEEE;
   letter-spacing: 2px;
+
+  &.hidden {
+    display: none;
+  }
+
+  .naming {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .price {
+    max-width: 50px;
+    margin-right: 10px;
+    height: 30px;
+    font-size: 21px;
+  }
+
+  .category {
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+  }
 }
 
 .remove-item:hover+.item-name {
